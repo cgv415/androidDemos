@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Base de datos</string>
+    <string name="title_activity_leer_usuario">LeerUsuario</string>
+    <string name="hola_mundo">Hola Mundo</string>
+</resources>

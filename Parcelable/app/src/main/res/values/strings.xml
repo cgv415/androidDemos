@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Parcelable</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_view_trick">ViewTrick</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_view_trick2">ViewTrick2</string>
+</resources>
