@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         manager = new DataBaseManager(getApplicationContext());
 
+        manager.reiniciarTabla();
+
         this.actualizarComplete();
         id =(TextView) findViewById(R.id.tvID);
         if(alumnos.isEmpty()){

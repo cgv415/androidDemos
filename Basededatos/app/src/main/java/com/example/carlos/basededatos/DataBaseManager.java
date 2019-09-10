@@ -18,13 +18,17 @@ public class DataBaseManager  implements DataBase{
 
     private static final String TABLE_ALUMNO = "alumno";
 
-
-    private DataBaseManager(Context context) {
+    public DataBaseManager(Context context) {
         helper = new DBHelper(context);
         db = helper.getWritableDatabase();
         if(!isTableExists(db,TABLE_ALUMNO)){
             this.crearTablaAlumno();
         }
+    }
+
+    public void reiniciarTabla(){
+        eliminarTabla("alumno");
+        crearTablaAlumno();
     }
 
     boolean isTableExists(SQLiteDatabase db, String tableName)
